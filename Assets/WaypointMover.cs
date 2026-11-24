@@ -7,12 +7,17 @@ public class WaypointMover : MonoBehaviour
 
     [SerializeField] private float moveSpeed = 2f;
 
+    [Range(0f, 20f)]
+    [SerializeField] private float rotateSpeed = 4f;
+
     [SerializeField] private float distanceThreshold = 0.1f;
 
     //The current wayppoint target that the object is moving towards
     private Transform currentWaypoint;
 
-    
+
+    private Quaternion rotationGoal;
+    private Vector3 directionToWaypoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +37,15 @@ public class WaypointMover : MonoBehaviour
         if(Vector3.Distance(transform.position, currentWaypoint.position) < distanceThreshold)
         {
             currentWaypoint = waypoints.GetNextWaypoint(currentWaypoint);
+            //transform.LookAt(currentWaypoint);
         }
+        RotateTowardsWaypoint();
+    }
+
+private void RotateTowardsWaypoint()
+    {
+        directionToWaypoint = (currentWaypoint.position -   transform.position ).normalized;
+        rotationGoal = Quaternion.LookRotation(directionToWaypoint);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotationGoal, rotateSpeed * Time.deltaTime);
     }
 }
