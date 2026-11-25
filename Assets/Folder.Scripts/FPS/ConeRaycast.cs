@@ -21,7 +21,8 @@ public class ConeRaycast : MonoBehaviour
             }
             else
             {
-                
+                //Debug.Log("Out of ammo! Reloading...");
+                ammoReload.ReloadAmmo();
                 return;
             }
             
