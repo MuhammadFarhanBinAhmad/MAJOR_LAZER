@@ -1,10 +1,10 @@
-using TMPro;
+//using TMPro;
 using UnityEngine;
 
 public class AmmoReload : MonoBehaviour
 {
     public int maxAmmo = 10;
-    public TextMeshProUGUI ammoText;
+    //public TextMeshProUGUI ammoText;
     public int _ammo;
 
     public void ReloadAmmo()
@@ -15,7 +15,7 @@ public class AmmoReload : MonoBehaviour
             {
                 _ammo = _ammo + 10;
                 maxAmmo = maxAmmo - 10;
-                ammoText.text = _ammo.ToString();
+                //ammoText.text = _ammo.ToString();
             }
             else
             {
