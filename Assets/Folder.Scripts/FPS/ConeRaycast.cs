@@ -5,13 +5,26 @@ public class ConeRaycast : MonoBehaviour
     public float rayDistance = 20f;
     public float coneAngle = 30f;
     public int rayCount = 100;
+    public AmmoManager ammoManager;
+    public int _ammo = 10;
+    public AmmoReload ammoReload; // Reference to the AmmoReload script
     public ScoreManager scoreManager;
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            ShootCone();
+            if (ammoManager._ammo > 0)
+            {
+                ShootCone();
+                ammoManager.DecreaseAmmo();
+            }
+            else
+            {
+                
+                return;
+            }
+            
         }
     }
 
