@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - CinemachineTarget
-  - Bird
+  - Bird1
+  - Bird2
+  - Bird3
   layers:
   - Default
   - TransparentFX

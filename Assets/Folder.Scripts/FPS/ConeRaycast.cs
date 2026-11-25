@@ -5,8 +5,7 @@ public class ConeRaycast : MonoBehaviour
     public float rayDistance = 20f;
     public float coneAngle = 30f;
     public int rayCount = 100;
-    public GameObject targetObject;
-    public bool isTargetHit = false;
+    public ScoreManager scoreManager;
 
     void Update()
     {
@@ -27,13 +26,27 @@ public class ConeRaycast : MonoBehaviour
             if (Physics.Raycast(transform.position, direction, out hit, rayDistance))
             {
                 Debug.DrawRay(transform.position, direction * hit.distance, Color.red, 2f);
-                if (hit.collider.gameObject.CompareTag("Bird"))
+                if (hit.collider.gameObject.CompareTag("Bird1"))
                 {
+                    scoreManager.AddScore();
                     Destroy(hit.collider.gameObject);
-                    isTargetHit = true;
+                    return; 
                 }
-
-                
+                if (hit.collider.gameObject.CompareTag("Bird2"))
+                {
+                    scoreManager.AddScore();
+                    scoreManager.AddScore();
+                    Destroy(hit.collider.gameObject);
+                    return; 
+                }
+                if (hit.collider.gameObject.CompareTag("Bird3"))
+                {
+                    scoreManager.AddScore();
+                    scoreManager.AddScore();
+                    scoreManager.AddScore();
+                    Destroy(hit.collider.gameObject);
+                    return; 
+                }
             }
             else
             {
