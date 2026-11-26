@@ -8,6 +8,7 @@ public class ConeRaycast : MonoBehaviour
     public AmmoManager ammoManager;
     public int _ammo = 10;
     public AmmoReload ammoReload; // Reference to the AmmoReload script
+    public int reserveAmmo = 10; // Reserve ammo variable
     public ScoreManager scoreManager;
 
     void Update()
@@ -21,13 +22,25 @@ public class ConeRaycast : MonoBehaviour
             }
             else
             {
-                Debug.Log("Out of ammo! Reloading...");
+                Debug.Log("Out of ammo! Reload!");
+                return;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (ammoReload.reserveAmmo >= 10)
+            {
                 ammoReload.ReloadAmmo(); // Call the ReloadAmmo method from the AmmoReload script
+            }
+            else
+            {
+                Debug.Log("No reserve ammo left!");
                 return;
             }
             
         }
-    }
+        
+    }   
 
     void ShootCone()
     {
