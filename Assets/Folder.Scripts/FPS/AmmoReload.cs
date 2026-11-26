@@ -14,12 +14,12 @@ public class AmmoReload : MonoBehaviour
     {
         if (ammoManager._ammo == 0)
         {
-            // ammoManager._ammo = ammoManager._ammo + 10;
-            // reserveAmmo = reserveAmmo - 10;
-            // ammoText.text = ammoManager._ammo.ToString();
-            // reserveAmmoText.text = reserveAmmo.ToString();
-            StartCoroutine(ReloadCoroutine());  
-            Debug.Log("Reloading ammo...");     
+            ammoManager._ammo = ammoManager._ammo + _ammoToReload;
+            reserveAmmo = reserveAmmo - _ammoToReload;
+            ammoText.text = ammoManager._ammo.ToString();
+            reserveAmmoText.text = reserveAmmo.ToString();
+            Debug.Log("Reloading ammo...");
+            
         }
         else
         {
@@ -27,16 +27,6 @@ public class AmmoReload : MonoBehaviour
             return;
         }
         
-        
-    }
-
-    IEnumerator ReloadCoroutine()
-    {
-        yield return new WaitForSeconds(3f); // Wait for 3 seconds
-        ammoManager._ammo += _ammoToReload; // Add the specified amount of ammo to the current ammo
-        reserveAmmo -= _ammoToReload; // Subtract the specified amount from the reserve ammo
-        ammoText.text = ammoManager._ammo.ToString(); // Update the ammo text
-        reserveAmmoText.text = reserveAmmo.ToString(); // Update the reserve ammo text
         
     }
 

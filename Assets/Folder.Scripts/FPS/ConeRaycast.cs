@@ -14,9 +14,12 @@ public class ConeRaycast : MonoBehaviour
     public AmmoManager ammoManager;
     public int _ammo = 1;
     public AmmoReload ammoReload; // Reference to the AmmoReload script
+    public float _reloadDuration;
     public int reserveAmmo = 90;// Reserve ammo variable
     public ScoreManager scoreManager;
-    public bool shotFired = false; // test1 ndsve\vwb
+    public bool shotFired = false;
+    // public float _fireRate;
+    // float _nxtTimeFire;
 
     void Update()
     {
@@ -38,15 +41,8 @@ public class ConeRaycast : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (ammoReload.reserveAmmo >= 1)
-            {
-                ammoReload.ReloadAmmo(); // Call the ReloadAmmo method from the AmmoReload script
-            }
-            else
-            {
-                Debug.Log("No reserve ammo left!");
-                return;
-            }
+            StartCoroutine(ReloadDelay()); // Start the reload delay coroutine
+            
             
         }
         
@@ -120,9 +116,11 @@ public class ConeRaycast : MonoBehaviour
         Vector3 localDirection = Quaternion.Euler(y, x, 0f) * Vector3.forward;
         return transform.TransformDirection(localDirection);
     }
-    // IEnumerator delayBetweenShots()
-    // {
-    //     yield return new WaitForSeconds(1.5f); // Adjust the delay time as needed
-    //     shotFired = false;
-    // }
+    IEnumerator ReloadDelay()
+    {
+        yield return new WaitForSeconds(_reloadDuration); // Adjust the delay time as needed
+        ammoReload.ReloadAmmo(); // Call the ReloadAmmo method from the AmmoReload script
+
+    }
 }
+
