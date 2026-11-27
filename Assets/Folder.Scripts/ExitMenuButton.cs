@@ -6,13 +6,7 @@ public class ExitMenuButton : MonoBehaviour
     public void QuitGame()
     {
        Debug.Log("Game is exiting..."); 
-       if (Application.isEditor)
-       {
-           UnityEditor.EditorApplication.isPlaying = false;
-       }
-       else
-       {
            Application.Quit();
-       }
+
     }
 }
