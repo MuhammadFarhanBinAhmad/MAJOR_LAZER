@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 5914860951223193070}
   m_Layer: 0
   m_Name: Bird_Default 1
-  m_TagString: Untagged
+  m_TagString: Bird1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,8 +118,8 @@ Transform:
   m_GameObject: {fileID: 3489634193026381852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.0266, y: 0.24129, z: 23.753}
-  m_LocalScale: {x: 0.47141308, y: 0.47141308, z: 0.47141308}
+  m_LocalPosition: {x: -6.4728, y: 0.045431, z: 19.845}
+  m_LocalScale: {x: 0.9004677, y: 0.9004677, z: 0.9004677}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2615095691874801015}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8257849206917145736}
   m_Layer: 0
   m_Name: Default_bird
-  m_TagString: Untagged
+  m_TagString: Bird1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

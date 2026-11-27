@@ -428,14 +428,14 @@ RectTransform:
   m_GameObject: {fileID: 1033340740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5019865, y: 5.5019865, z: 5.5019865}
+  m_LocalScale: {x: 6.6695085, y: 6.6695085, z: 6.6695085}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1524166929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92, y: 47}
+  m_AnchoredPosition: {x: 146, y: -22}
   m_SizeDelta: {x: 102.7902, y: 100.556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033340742
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: b928139ebe76340ec97da3c571c841c8, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6dc998dd2910940189076c8fc44e1776, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -473,6 +473,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033340740}
   m_CullTransparentMesh: 1
+--- !u!1 &1257410153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257410155}
+  - component: {fileID: 1257410154}
+  m_Layer: 5
+  m_Name: CutScene FADE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1257410154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257410153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a244205585552415cb78ca33240ed63d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneFADE
+  sceneName: 
+  fadePanel: {fileID: 1609484181}
+  fadeDuration: 1
+--- !u!224 &1257410155
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257410153}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1429112246
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,14 +551,14 @@ RectTransform:
   m_GameObject: {fileID: 1429112246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0090486, y: 1.0090486, z: 1.0090486}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 968955419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5591, y: 15.8681}
+  m_AnchoredPosition: {x: 108, y: 11}
   m_SizeDelta: {x: 469.8546, y: 58.9366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429112248
@@ -530,7 +581,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mr Chikawa
+  m_text: Mr Chikawa and Friends
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 74e23c6ba6b97452bbbd7b4ef6a3b25e, type: 2}
   m_sharedMaterial: {fileID: -5592244160404168944, guid: 74e23c6ba6b97452bbbd7b4ef6a3b25e, type: 2}
@@ -557,8 +608,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.55
-  m_fontSizeBase: 46.55
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -595,7 +646,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -106.20091, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -708,6 +759,7 @@ RectTransform:
   - {fileID: 968955419}
   - {fileID: 452665994}
   - {fileID: 1571155168}
+  - {fileID: 1609484184}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -848,6 +900,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571155167}
   m_CullTransparentMesh: 1
+--- !u!1 &1609484180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609484184}
+  - component: {fileID: 1609484183}
+  - component: {fileID: 1609484182}
+  - component: {fileID: 1609484181}
+  m_Layer: 5
+  m_Name: Fade Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &1609484181
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609484180}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1609484182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609484180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1609484183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609484180}
+  m_CullTransparentMesh: 1
+--- !u!224 &1609484184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609484180}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1524166929}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00012207031, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1654180150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1304,24 @@ MonoBehaviour:
   dialogues:
   - 'YOU DID IT YOU WON!!!
 
-    LYOLD GOT HIS REVENGE!'
+    Llyod GOT HIS REVENGE!'
+  - Thanks for playing the game!
+  - "Now \n'Go and live the world, \nbecause theres so much to explore!'"
+  - Made By Stgss Students...
+  - 'Lam Ging-I (Project Manager, PAD)
+
+    Chong Zhuo Hang (Project Designer)'
+  - 'Elliot Eu (Art and Tech Coder)
+
+    Lucas Lim (Head Coder)
+
+    Hung Kye (Assistant
+    Coder)
+
+'
+  - 'Bai and see you next time in 20 years
+
+'
   typingSpeed: 0.05
   _nextSceneName: 
 --- !u!114 &1892290104
@@ -1326,7 +1480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 13bba98719a524473849eb24889f35ad, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6ea6b467b9a7644e4bfb2d65c7eae1a7, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1427,4 +1581,5 @@ SceneRoots:
   - {fileID: 1818847508}
   - {fileID: 1654180152}
   - {fileID: 1524166929}
+  - {fileID: 1257410155}
   - {fileID: 2084178817}

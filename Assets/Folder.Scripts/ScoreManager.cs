@@ -8,6 +8,6 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         _score ++;
-        _text.text = _score.ToString();
+        _text.text = "Score: " + _score.ToString();
     }
 }

@@ -24,8 +24,41 @@ EditorBuildSettings:
     path: Assets/Scenes/FourthML.unity
     guid: 941e5a16905c54bac85659ecfd3c8099
   - enabled: 1
-    path: Assets/Scenes/MLB Map.unity
-    guid: bcdb8e8c3935545149931355c2a16774
+    path: Assets/Scenes/INSTURCT A5.unity
+    guid: da4c3a47ff5aa46b8a9a888610c0f677
+  - enabled: 1
+    path: Assets/Scenes/CutScene 1.unity
+    guid: b603b4c3fc259460e92d6cbb39e23556
+  - enabled: 1
+    path: Assets/Scenes/Round 5.unity
+    guid: 5d872c3a5030a40529d85e0ad835d7f1
+  - enabled: 1
+    path: Assets/Scenes/CutScene 2.unity
+    guid: f5c88b3d016484a77a6b7b389ecc6787
+  - enabled: 1
+    path: Assets/Scenes/Round 1.unity
+    guid: 2823a1ba15afb4579939310687a272c4
+  - enabled: 1
+    path: Assets/Scenes/CutScene 3.unity
+    guid: a5095c3eb6aa845bdba65cb50db880de
+  - enabled: 1
+    path: Assets/Scenes/Round 3.unity
+    guid: e162174fde21c4cf79f047a9a4974c1f
+  - enabled: 1
+    path: Assets/Scenes/CutScene 4.unity
+    guid: aeddd812ecdf9479da3f9980e86e7e47
+  - enabled: 1
+    path: Assets/Scenes/Round 4.unity
+    guid: e33e59e8aa7104259983fd1bcbed268d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene 5.unity
+    guid: dfb5c337c6f504f779aef14643101230
+  - enabled: 1
+    path: Assets/Scenes/Round 2.unity
+    guid: a59beb5946be148e2b5fcc319f9ca777
+  - enabled: 1
+    path: Assets/Scenes/Cutscene END.unity
+    guid: cf3b05945f20344aa8ca51e2d54d43ac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

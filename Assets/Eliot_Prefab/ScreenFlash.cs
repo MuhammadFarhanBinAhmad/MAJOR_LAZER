@@ -5,6 +5,9 @@ using System.Collections;
 public class ScreenFlash : MonoBehaviour
 {
     public Image flashImage;
+    public AmmoManager ammoManager;
+    public int _ammo;
+
 
     void Start()
     {
@@ -16,8 +19,12 @@ public class ScreenFlash : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            StopAllCoroutines();
-            StartCoroutine(FlashEffect());
+            if (ammoManager._ammo > 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(FlashEffect());
+            }
+            
         }
     }
 

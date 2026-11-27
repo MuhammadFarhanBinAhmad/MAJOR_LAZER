@@ -18,6 +18,9 @@ public class ConeRaycast : MonoBehaviour
     public int reserveAmmo = 90;// Reserve ammo variable
     public ScoreManager scoreManager;
     public bool shotFired = false;
+
+public AudioSource audioSource; // Reference to the AudioSource component
+
     // public float _fireRate;
     // float _nxtTimeFire;
 
@@ -30,6 +33,7 @@ public class ConeRaycast : MonoBehaviour
             {
                 ShootCone();
                 ammoManager.DecreaseAmmo();
+                audioSource.Play(); // Play the shooting sound
                 // shotFired = true;
                 // StartCoroutine(delayBetweenShots());
             }
